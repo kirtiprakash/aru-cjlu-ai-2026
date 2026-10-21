@@ -35,6 +35,15 @@ window.STUDENTS = [
     shortBio: "I'm Sihan Li, a physics graduate from the University of Toronto with an interest in artificial intelligence, autonomous systems, and control theory. I'm particularly interested in how intelligent systems can learn and adapt to changing environments, with applications in autonomous driving and robotics.",
     approved: true
   },
+   {
+    name: "Zichen Ma",
+    photo: "assets/images/students/Einstein.jpg",
+    hometown: "Linyi, Shandong, China",
+    studies: "Artificial Intelligence, China Jiliang University & Anglia Ruskin University",
+    interests: "Medical Image Analysis, Semantic Web / Ontology, Deep Learning",
+    shortBio: "I’m a student on the 2026 ARU-CJLU joint master programme. My background is medical imaging, and I’m currently exploring AI for medical images together with semantic data technologies and knowledge graphs.",
+    approved: true
+  },
   ...Array.from({ length: 22 }, (_, index) => {
     const number = String(index + 4).padStart(2, '0');
     return {
