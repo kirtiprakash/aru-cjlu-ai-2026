@@ -109,15 +109,15 @@ window.STUDENTS = [
   },
   {
     id: "student-10",
-    name: "Fangxi Cheng",
+    name: "Fangxi Chen",
     group: "Einstein",
     leader: false,
-    photo: "",
-    hometown: "To be confirmed",
-    studies: "To be confirmed",
-    interests: "To be confirmed",
-    shortBio: "This profile is reserved for a member of the 2026 ARU–CJLU cohort and will be completed after the student reviews and approves the wording.",
-    approved: false
+    photo: "assets/images/students/fangxi-chen.jpg",                     
+    hometown: "Hangzhou, Zhejiang, China",
+    studies: "Artificial Intelligence, Anglia Ruskin University & China Jiliang University",
+    interests: "writing",
+    shortBio: "I am interested in artificial intelligence in the field of language and text. As a member of the 2026 ARU–CJLU project, during my learning process, I am coming into contact with semantic data technology, linguistics and other tools. I enjoy seeing how visualization models and structured domain knowledge can be refined in the field of text creation. What I am particularly concerned about is whether these AI tools can be naturally integrated into daily work processes.",
+    approved: true
   },
   {
     id: "student-11",
@@ -136,24 +136,24 @@ window.STUDENTS = [
     name: "Jackie",
     group: "Einstein",
     leader: false,
-    photo: "",
-    hometown: "To be confirmed",
-    studies: "To be confirmed",
-    interests: "To be confirmed",
-    shortBio: "This profile is reserved for a member of the 2026 ARU–CJLU cohort and will be completed after the student reviews and approves the wording.",
-    approved: false
+    photo: "assets/images/students/taoyu-guo.jpg",
+    hometown: "Taizhou,Zhejiang, China",
+    studies: "Computer Science and Technology,China Jiliang University College of Modern Science and Technology",
+    interests: "Artificial Intelligence",
+    shortBio: "I'm curious about AI for education and learning. As part of the 2026 ARU–CJLU cohort, I'm picking up intelligent tutoring systems, learning analytics and ontology tools during my studies.And I just wanna have happy memories with guys,btw,if you like play Hearthstone or like hip-hop music.Welcome to talk with me.",
+    approved: true
   },
   {
     id: "student-13",
     name: "Zehua Yuan",
     group: "Einstein",
     leader: false,
-    photo: "",
-    hometown: "To be confirmed",
-    studies: "To be confirmed",
-    interests: "To be confirmed",
-    shortBio: "This profile is reserved for a member of the 2026 ARU–CJLU cohort and will be completed after the student reviews and approves the wording.",
-    approved: false
+    photo: "assets/images/students/zehua-yuan.jpg",
+    hometown: "Shaoxing,Zhejiang,China",
+    studies: "Artificial Intelligence, Anglia Ruskin University & China Jiliang University",
+    interests: "Personal Intelligent Agent,AI automation action flow",
+    shortBio: "I am interested in the applications of AI in education, particularly adaptive learning, learning analytics and the ethical use of generative AI within teaching and learning.",
+    approved: true
   },
   {
     id: "student-14",
