@@ -28,12 +28,12 @@ window.STUDENTS = [
     name: "Kaiqi Zhu",
     group: "Berners Lee",
     leader: true,
-    photo: "",
-    hometown: "To be confirmed",
-    studies: "To be confirmed",
-    interests: "To be confirmed",
-    shortBio: "This profile is reserved for a member of the 2026 ARU–CJLU cohort and will be completed after the student reviews and approves the wording.",
-    approved: false
+    photo: "assets/images/students/kaiqi-zhu.jpg",
+    hometown: "Shaoxing, Zhejiang, China",
+    studies: "Mechanical Design, Manufacturing and Automation, China Jiliang University",
+    interests: "Computer vision, intelligent measurement, industrial inspection and AI deployment",
+    shortBio: "I enjoy bridging mechanical design with artificial intelligence to build practical inspection and measurement systems. Coming from China Jiliang University, I want to combine precision measurement knowledge with vision algorithms and to work through the whole pipeline, from dataset construction and model training to edge deployment. What keeps me curious is how to embed vision-based detection into mechanical equipment to raise the automation level of industrial measurement.",
+    approved: true
   },
   {
     id: "student-04",
@@ -160,12 +160,12 @@ window.STUDENTS = [
     name: "Guanxun Chen",
     group: "Berners Lee",
     leader: false,
-    photo: "",
-    hometown: "To be confirmed",
-    studies: "To be confirmed",
-    interests: "To be confirmed",
-    shortBio: "This profile is reserved for a member of the 2026 ARU–CJLU cohort and will be completed after the student reviews and approves the wording.",
-    approved: false
+    photo: "assets/images/students/guanxun-chen.jpg",
+    hometown: "Wuhan, Hubei, China",
+    studies: "Medical Laboratory Technology, Yangtze University",
+    interests: "Medical artificial intelligence and medical data engineering",
+    shortBio: "As a member of the 2026 ARU–CJLU cohort, I am dedicated to medical artificial intelligence and medical-related data engineering. I am interested in building practical AI-assisted clinical solutions, exploring modern machine-learning tools for laboratory medicine, and bridging the gap between medical laboratory practice and artificial intelligence algorithms.",
+    approved: true
   },
   {
     id: "student-16",
@@ -184,12 +184,12 @@ window.STUDENTS = [
     name: "Haorong Huang",
     group: "Berners Lee",
     leader: false,
-    photo: "",
-    hometown: "To be confirmed",
-    studies: "To be confirmed",
-    interests: "To be confirmed",
-    shortBio: "This profile is reserved for a member of the 2026 ARU–CJLU cohort and will be completed after the student reviews and approves the wording.",
-    approved: false
+    photo: "assets/images/students/haorong-huang.jpg",
+    hometown: "Hangzhou, Zhejiang, China",
+    studies: "Computer Science and Technology, China Jiliang University",
+    interests: "Artificial intelligence, with a focus on responsible development and governance",
+    shortBio: "I am interested in the responsible development and governance of AI, upholding ethics to ensure technology benefits people. I hope my work supports safe and reliable AI for industry and contributes to technological self-reliance.",
+    approved: true
   },
   {
     id: "student-18",
