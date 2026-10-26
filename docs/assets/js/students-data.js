@@ -148,12 +148,12 @@ window.STUDENTS = [
     name: "Chaopei Yu",
     group: "Berners Lee",
     leader: false,
-    photo: "",
-    hometown: "To be confirmed",
-    studies: "To be confirmed",
-    interests: "To be confirmed",
-    shortBio: "This profile is reserved for a member of the 2026 ARU–CJLU cohort and will be completed after the student reviews and approves the wording.",
-    approved: false
+    photo: "assets/images/students/chaopei-yu.jpg",
+    hometown: "Sanming, Fujian, China",
+    studies: "Medical Imaging Technology, Hunan Medical University",
+    interests: "Medical image processing and big-data analysis, deep learning and medical large language models",
+    shortBio: "I enjoy applying deep learning and medical big-data techniques to practical clinical and medical equipment management problems. As a member of the 2026 ARU–CJLU cohort, I focus on medical image analysis and on how medical large models can support device adverse-event mining and healthcare knowledge reasoning. What keeps me curious is bridging the gap between AI research and real hospital scenarios.",
+    approved: true
   },
   {
     id: "student-15",
@@ -172,12 +172,12 @@ window.STUDENTS = [
     name: "Qing Zhou",
     group: "Berners Lee",
     leader: false,
-    photo: "",
-    hometown: "To be confirmed",
-    studies: "To be confirmed",
-    interests: "To be confirmed",
-    shortBio: "This profile is reserved for a member of the 2026 ARU–CJLU cohort and will be completed after the student reviews and approves the wording.",
-    approved: false
+    photo: "assets/images/students/qing-zhou.jpg",
+    hometown: "Hangzhou, Zhejiang, China",
+    studies: "Communication Engineering, China Jiliang University",
+    interests: "Healthcare information technology (HIT) and medical AI",
+    shortBio: "Twenty years from now you will be more disappointed by the things that you didn't do than by the ones you did do. So throw off the bowlines. Sail away from the safe harbour. Catch the trade winds in your sails. Explore. Dream. Discover.",
+    approved: true
   },
   {
     id: "student-17",
