@@ -173,6 +173,67 @@ img { max-width: 100%; }
   letter-spacing: .12em;
   text-transform: uppercase;
 }
+
+/* Story quote banner: a cream band directly under the hero, before the profile
+   grid. Two columns on wide screens so a ten-line dialogue does not run tall. */
+.quote-banner {
+  padding: 56px 0;
+  background: var(--cream);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.story-quote {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, .3fr) minmax(0, 1fr);
+  gap: 20px 40px;
+  align-items: start;
+  margin: 0;
+  padding-left: 26px;
+  border-left: 6px solid var(--gold);
+}
+.story-quote::before {
+  content: "\201C";
+  position: absolute;
+  left: 22px;
+  bottom: -18px;
+  color: rgba(199,166,75,.42);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 5.5rem;
+  line-height: 1;
+  pointer-events: none;
+}
+.story-quote h2 {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  align-self: start;
+  margin: 0;
+  color: var(--navy);
+  font-size: clamp(1.5rem, 2.6vw, 2.1rem);
+  line-height: 1.12;
+}
+.story-quote blockquote {
+  grid-column: 2;
+  margin: 0;
+  padding: 0;
+}
+.story-quote blockquote p {
+  margin: 0 0 14px;
+  color: var(--muted);
+  font-size: 1.1rem;
+  line-height: 1.65;
+}
+.story-quote blockquote p:last-child { margin-bottom: 0; }
+.story-quote figcaption {
+  grid-column: 2;
+  margin-top: 4px;
+  padding-top: 16px;
+  border-top: 2px solid rgba(199,166,75,.45);
+  color: var(--navy);
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
 .profile-card.placeholder { background: #fcfbf7; }
 
 .team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
@@ -236,6 +297,10 @@ img { max-width: 100%; }
   .outline-wrap { overflow-x: auto; padding-bottom: 10px; }
   .outline-table { min-width: 720px; }
   .journey { grid-template-columns: 1fr 1fr; }
+  .story-quote { grid-template-columns: 1fr; gap: 14px; padding-left: 20px; }
+  .story-quote h2, .story-quote blockquote, .story-quote figcaption { grid-column: 1; }
+  .story-quote::before { display: none; }
+  .quote-banner { padding: 40px 0; }
 }
 @media (max-width: 520px) {
   .brand-copy span { display: none; }
