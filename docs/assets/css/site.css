@@ -192,17 +192,6 @@ img { max-width: 100%; }
   padding-left: 26px;
   border-left: 6px solid var(--gold);
 }
-.story-quote::before {
-  content: "\201C";
-  position: absolute;
-  left: 22px;
-  bottom: -18px;
-  color: rgba(199,166,75,.42);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 5.5rem;
-  line-height: 1;
-  pointer-events: none;
-}
 .story-quote h2 {
   grid-column: 1;
   grid-row: 1 / span 2;
@@ -229,10 +218,39 @@ img { max-width: 100%; }
   margin-top: 4px;
   padding-top: 16px;
   border-top: 2px solid rgba(199,166,75,.45);
+}
+.story-quote .proverb-zh {
+  display: block;
   color: var(--navy);
-  font-size: 1.3rem;
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  line-height: 1.2;
+}
+.story-quote .proverb-pinyin {
+  display: block;
+  margin-top: 6px;
+  color: var(--gold);
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.story-quote .proverb-en {
+  display: block;
+  margin-top: 10px;
+  color: var(--navy);
+  font-size: 1.15rem;
   font-weight: 700;
   line-height: 1.45;
+}
+.story-quote figcaption cite {
+  display: block;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: .82rem;
+  font-style: normal;
 }
 .profile-card.placeholder { background: #fcfbf7; }
 
@@ -299,7 +317,6 @@ img { max-width: 100%; }
   .journey { grid-template-columns: 1fr 1fr; }
   .story-quote { grid-template-columns: 1fr; gap: 14px; padding-left: 20px; }
   .story-quote h2, .story-quote blockquote, .story-quote figcaption { grid-column: 1; }
-  .story-quote::before { display: none; }
   .quote-banner { padding: 40px 0; }
 }
 @media (max-width: 520px) {
