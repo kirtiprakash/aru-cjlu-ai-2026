@@ -274,17 +274,5 @@ window.STUDENTS = [
     interests: "Industrial Robot Technology and Visual Recognition",
     shortBio: "I am a graduate in the 2026 ARU–CJLU cohort. My research interests lie in industrial robot technology and visual recognition. I want to investigate how visual perception enables robots to perform reliable recognition, localization and grasping in complicated industrial environments, and build systematic solutions to boost the intelligence of industrial automation.",
     approved: true
-  },
-  {
-    id: "student-25",
-    name: "Student 25",
-    group: "",
-    leader: false,
-    photo: "",
-    hometown: "To be confirmed",
-    studies: "To be confirmed",
-    interests: "To be confirmed",
-    shortBio: "This profile is reserved for a member of the 2026 ARU–CJLU cohort and will be completed after the student reviews and approves the wording.",
-    approved: false
   }
 ];
