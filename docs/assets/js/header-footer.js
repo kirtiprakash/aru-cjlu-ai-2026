@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <div><h3>Explore</h3><p><a href="${depth}students.html">Student cohort</a><br><a href="${depth}team.html">Teaching team</a></p></div>
           <div><h3>Modules</h3><p><a href="${depth}modules/semantic-data-technologies.html">SDT</a><br><a href="${depth}modules/advanced-machine-learning.html">Advanced ML</a><br><a href="${depth}modules/deep-learning.html">Deep learning</a></p></div>
         </div>
-        <p class="footer-note"><small>Prototype prepared for the 2026 teaching cohort. Student and tutor information is published only with consent. © <span data-current-year></span> ARU × CJLU.</small></p>
+        <p class="footer-note"><small>Student and tutor information is published only with consent. The website maintained by PinZhen You, Sihan Li and Kirti Prakash. © <span data-current-year></span> ARU × CJLU.</small></p>
       </div>
     </footer>`;
 });
