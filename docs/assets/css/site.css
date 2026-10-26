@@ -104,8 +104,13 @@ img { max-width: 100%; }
 .section { padding: 86px 0; }
 .section.alt { background: var(--cream); }
 .section-head { display: grid; grid-template-columns: minmax(0, .75fr) minmax(320px, 1.25fr); gap: 50px; align-items: end; margin-bottom: 40px; }
-.section-head h2 { margin: 8px 0 0; color: var(--navy); font-size: clamp(2.2rem, 5vw, 4rem); line-height: 1; letter-spacing: -.045em; }
+.section-head h2 { margin: 8px 0 0; color: var(--navy); font-size: clamp(2rem, 3.4vw, 3rem); line-height: 1; letter-spacing: -.045em; }
 .section-head p { margin: 0; color: var(--muted); font-size: 1.05rem; }
+
+/* Home overview: heading and summary are both short now, so centre the pair and
+   tighten the gap. Bottom-aligning a five-line heading against three lines of
+   text left a wide empty band above the paragraph. */
+#overview .section-head { align-items: center; gap: 44px; margin-bottom: 28px; }
 .kicker { color: var(--red); text-transform: uppercase; letter-spacing: .16em; font-size: .76rem; font-weight: 900; }
 
 .module-grid, .profile-grid, .feature-grid { display: grid; gap: 22px; }
