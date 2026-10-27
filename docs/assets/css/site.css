@@ -309,7 +309,7 @@ img { max-width: 100%; }
 .footer-grid { display: grid; grid-template-columns: 1.3fr .7fr .7fr; gap: 32px; }
 .site-footer h2, .site-footer h3 { margin-top: 0; color: #fff; }
 .site-footer a { color: #d6dfeb; }
-.site-footer small { color: #a9b7c9; }
+.site-footer small { color: #a9b7c9; font-size: 1rem; line-height: 1.65; }
 .footer-note { margin-top: 28px; padding-top: 20px; border-top: 1px solid #ffffff22; }
 .empty-state { padding: 34px; border: 1px dashed var(--blue-grey); border-radius: 16px; color: var(--muted); text-align: center; }
 
