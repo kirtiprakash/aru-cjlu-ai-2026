@@ -257,6 +257,18 @@ img { max-width: 100%; }
   font-size: .82rem;
   font-style: normal;
 }
+
+/* Page-level disclaimer: a quiet line at the foot of the content, set off by a
+   hairline rule so it reads as a note about the page rather than body copy. */
+.page-disclaimer { padding: 8px 0 52px; }
+.page-disclaimer p {
+  margin: 0;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: .86rem;
+  line-height: 1.6;
+}
 .profile-card.placeholder { background: #fcfbf7; }
 
 .team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
