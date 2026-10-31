@@ -1324,3 +1324,60 @@ img { max-width: 100%; }
   .feedback-identity-options, .feedback-preview-rail, .feedback-wall-grid { grid-template-columns: 1fr; }
   .feedback-form { padding: 23px; }
 }
+
+
+/* Hermit's Reasoning illustration, displayed beside the original story */
+.hermit-layout {
+  display: grid;
+  grid-template-columns: minmax(250px, .82fr) minmax(0, 1.42fr);
+  gap: clamp(28px, 4.5vw, 62px);
+  align-items: start;
+}
+.hermit-illustration {
+  min-width: 0;
+  margin: 0;
+}
+.hermit-illustration img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 18px;
+  border: 1px solid rgba(7, 26, 61, .14);
+  box-shadow: 0 16px 35px rgba(7, 26, 61, .10);
+}
+.hermit-illustration figcaption {
+  margin: 12px 2px 0;
+  color: var(--muted);
+  font-size: .8rem;
+  font-style: italic;
+  text-align: center;
+}
+.hermit-layout .story-quote {
+  display: block;
+  min-width: 0;
+  padding-left: clamp(19px, 2.6vw, 28px);
+}
+.hermit-layout .story-quote h2 {
+  margin: 0 0 22px;
+}
+.hermit-layout .story-quote blockquote { margin: 0; }
+.hermit-layout .story-quote figcaption { margin-top: 22px; }
+@media (max-width: 900px) {
+  .hermit-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .hermit-illustration {
+    width: 100%;
+    max-width: 560px;
+    justify-self: center;
+  }
+}
+@media (max-width: 520px) {
+  .hermit-layout { gap: 24px; }
+  .hermit-illustration img { border-radius: 13px; }
+  .hermit-layout .story-quote blockquote p { font-size: 1rem; }
+}
