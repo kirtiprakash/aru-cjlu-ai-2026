@@ -989,3 +989,40 @@ img { max-width: 100%; }
   .four-as-photo-placeholder { min-height: 240px; }
   .story-collection-divider { gap: 14px; }
 }
+
+
+/* Real images for the competition and Four As stories */
+.story-event-photo {
+  margin: 18px 0 26px;
+}
+.story-event-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  background: #f0f3f6;
+  box-shadow: 0 10px 25px rgba(7,26,61,.08);
+}
+.story-event-photo figcaption {
+  padding: 11px 2px 0;
+  color: var(--muted);
+  font-size: .85rem;
+  line-height: 1.5;
+}
+.four-as-figure a {
+  display: block;
+  border-radius: 18px;
+  outline-offset: 5px;
+}
+.four-as-figure a:hover img,
+.four-as-figure a:focus-visible img {
+  box-shadow: 0 12px 30px rgba(7,26,61,.15);
+  border-color: var(--gold);
+}
+.four-as-figure img {
+  border: 1px solid var(--line);
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(7,26,61,.08);
+  transition: box-shadow .2s ease, border-color .2s ease;
+}
