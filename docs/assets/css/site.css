@@ -1117,3 +1117,126 @@ img { max-width: 100%; }
   .chao-story-highlight { min-height: 0; gap: 8px; padding: 19px 20px; }
   .chao-story-figure { max-width: 100%; }
 }
+
+
+/* Publication permissions and consent transparency */
+.permissions-hero {
+  background:
+    radial-gradient(circle at 85% 30%, rgba(199, 166, 75, .16), transparent 25%),
+    linear-gradient(120deg, var(--navy), #13305a 76%, #21192e);
+}
+.permissions-hero h1 { font-size: clamp(3rem, 7.4vw, 6.5rem); }
+.permissions-intro {
+  display: grid;
+  grid-template-columns: minmax(0, .82fr) minmax(0, 1.18fr);
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.permissions-intro h2,
+.permissions-columns h2,
+.permissions-contact h2 {
+  color: var(--navy);
+  margin: 8px 0 16px;
+  font-size: clamp(2rem, 3.7vw, 3rem);
+  line-height: 1.12;
+  letter-spacing: -.04em;
+}
+.permissions-intro p, .permissions-columns p, .permissions-contact p {
+  color: var(--muted);
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+.permissions-intro p { margin: 0; }
+.permissions-steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 15px;
+}
+.permissions-step {
+  padding: 24px 22px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--gold);
+  border-radius: 15px;
+  box-shadow: 0 8px 22px rgba(7, 26, 61, .06);
+}
+.permissions-step-number {
+  font-size: .8rem;
+  font-weight: 900;
+  color: var(--red);
+  letter-spacing: .13em;
+}
+.permissions-step h3 {
+  margin: 15px 0 8px;
+  color: var(--navy);
+  font-size: 1.38rem;
+}
+.permissions-step p { margin: 0; color: var(--muted); font-size: .92rem; line-height: 1.57; }
+.permissions-columns {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(290px, .8fr);
+  gap: clamp(28px, 5vw, 75px);
+  align-items: start;
+}
+.permissions-columns p { margin: 0 0 17px; }
+.permissions-list { margin: 20px 0 22px; padding-left: 22px; }
+.permissions-list li { padding: 0 0 11px 2px; line-height: 1.55; }
+.permissions-list strong { color: var(--navy); }
+.permissions-panel {
+  padding: clamp(24px, 3vw, 35px);
+  border-radius: 18px;
+  background: var(--navy);
+  color: #fff;
+  border-top: 5px solid var(--gold);
+}
+.permissions-panel-label {
+  color: var(--gold);
+  font-size: .75rem;
+  font-weight: 900;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.permissions-panel h3 { margin: 16px 0; font-size: 1.58rem; line-height: 1.25; }
+.permissions-panel p { color: #dce6f5; }
+.permissions-panel a { color: #fff; text-underline-offset: 4px; }
+.permissions-panel-light { background: var(--cream); color: var(--navy); }
+.permissions-panel-light .permissions-panel-label { color: var(--red); }
+.permissions-panel-light p { color: var(--ink); }
+.permissions-contact-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) auto;
+  gap: 35px;
+  align-items: center;
+}
+.permissions-contact-inner > div { max-width: 850px; }
+.permissions-contact p.permissions-contact-note { font-size: .88rem; }
+.permissions-contact-button { background: var(--navy); color: #fff; white-space: normal; }
+.permissions-footnote-section { padding: 20px 0 40px; }
+.permissions-footnote-section p { max-width: 1000px; font-size: .78rem; color: var(--muted); line-height: 1.7; }
+.permissions-footnote-section a { color: var(--navy); }
+.site-permissions-strip { background: var(--paper); padding: 25px 0 35px; }
+.site-permissions-strip-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 25px;
+  border-top: 1px solid var(--line);
+  padding-top: 26px;
+}
+.site-permissions-strip strong { display: block; color: var(--navy); font-size: 1.05rem; }
+.site-permissions-strip p { margin: 3px 0 0; color: var(--muted); font-size: .89rem; }
+.site-permissions-strip a { color: var(--red); font-weight: 800; text-underline-offset: 4px; }
+@media (max-width: 950px) {
+  .permissions-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .permissions-intro { grid-template-columns: 1fr; gap: 15px; }
+}
+@media (max-width: 700px) {
+  .permissions-columns, .permissions-contact-inner { grid-template-columns: 1fr; }
+  .permissions-contact-button { justify-self: start; }
+}
+@media (max-width: 480px) {
+  .permissions-steps { grid-template-columns: 1fr; }
+  .permissions-section { padding: 58px 0; }
+}
