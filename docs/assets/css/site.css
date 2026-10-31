@@ -1026,3 +1026,94 @@ img { max-width: 100%; }
   box-shadow: 0 6px 18px rgba(7,26,61,.08);
   transition: box-shadow .2s ease, border-color .2s ease;
 }
+
+
+/* Chaopei Yu learning journey: portrait, achievements and editorial layout */
+.chao-story { border-top-color: var(--gold); }
+.chao-story-lead {
+  grid-template-columns: minmax(0, 1.2fr) minmax(270px, .78fr);
+  gap: clamp(28px, 4vw, 60px);
+  align-items: center;
+}
+.chao-story-lead h3 { font-size: clamp(2rem, 4.5vw, 3.5rem); }
+.chao-story-opening {
+  margin: 28px 0 0;
+  max-width: 650px;
+  padding-left: 20px;
+  border-left: 4px solid var(--gold);
+  color: var(--navy);
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.65;
+}
+.chao-story-figure {
+  width: 100%;
+  max-width: 420px;
+  margin: 0;
+  justify-self: center;
+}
+.chao-story-figure img {
+  display: block;
+  width: 100%;
+  max-height: 540px;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  background: #f5f1ed;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgba(7, 26, 61, .10);
+}
+.chao-story-figure figcaption {
+  margin-top: 11px;
+  color: var(--muted);
+  font-size: .8rem;
+  line-height: 1.5;
+}
+.chao-story-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: clamp(34px, 5vw, 55px);
+}
+.chao-story-highlight {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  min-height: 145px;
+  padding: 24px 20px;
+  background: var(--cream);
+  border: 1px solid #e7dcc9;
+  border-radius: 15px;
+}
+.chao-story-highlight:nth-child(2) { background: #edf3f8; border-color: #dbe6f0; }
+.chao-story-highlight:nth-child(3) { background: #f5e9ea; border-color: #efd6da; }
+.chao-highlight-value {
+  color: var(--navy);
+  font-size: clamp(1.45rem, 2.7vw, 2rem);
+  line-height: 1.12;
+  font-weight: 900;
+  letter-spacing: -.04em;
+}
+.chao-highlight-label { color: var(--muted); font-size: .87rem; line-height: 1.45; }
+.chao-story-reading .story-copy p { font-size: 1.04rem; }
+.chao-side-note {
+  margin-top: 32px;
+  padding: 20px 0 0;
+  border-top: 1px solid var(--line);
+}
+.chao-side-note p {
+  margin: 12px 0 0;
+  color: var(--muted);
+  line-height: 1.6;
+  font-size: .92rem;
+}
+@media (max-width: 900px) {
+  .chao-story-lead { grid-template-columns: 1fr; }
+  .chao-story-figure { justify-self: start; max-width: 360px; }
+}
+@media (max-width: 640px) {
+  .chao-story-highlights { grid-template-columns: 1fr; }
+  .chao-story-highlight { min-height: 0; gap: 8px; padding: 19px 20px; }
+  .chao-story-figure { max-width: 100%; }
+}
