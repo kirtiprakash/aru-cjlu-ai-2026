@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="The ARU–CJLU Learning Lab welcomes constructive feedback on teaching, learning and course materials. Share a suggestion with your name or anonymously.">
+  <title>Learning Lab | ARU × CJLU</title>
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body data-page="feedback">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div data-site-header></div>
+  <main id="main">
+    <section class="page-hero feedback-hero">
+      <div class="content">
+        <span class="eyebrow">The Learning Lab · ARU × CJLU</span>
+        <h1>Your voice.<br><span>Our next experiment.</span></h1>
+        <p>What worked? What was confusing? What should we try next? Share an idea and help improve the learning experience.</p>
+      </div>
+    </section>
+
+    <section class="section feedback-section" aria-labelledby="feedback-form-heading">
+      <div class="content feedback-layout">
+        <div class="feedback-main">
+          <div class="feedback-section-heading">
+            <span class="kicker">Speak up, shape the course</span>
+            <h2 id="feedback-form-heading">Leave your feedback</h2>
+            <p>Students may use a name or choose <strong>Anonymous</strong>. We review messages before adding them to the public feedback wall.</p>
+          </div>
+
+          <form id="feedback-form" class="feedback-form" method="post" action="https://formsubmit.co/kirti.prakash@aru.ac.uk" autocomplete="on">
+            <input type="hidden" name="_subject" value="ARU-CJLU Learning Lab feedback submission">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="source_page" value="https://kirtiprakash.github.io/aru-cjlu-ai-2026/feedback.html">
+            <div class="feedback-honeypot" aria-hidden="true">
+              <label for="feedback-website">Leave this blank</label>
+              <input type="text" id="feedback-website" name="_honey" tabindex="-1" autocomplete="off">
+            </div>
+
+            <fieldset class="feedback-fieldset">
+              <legend>How would you like to appear publicly?</legend>
+              <div class="feedback-identity-options">
+                <label class="feedback-radio-card">
+                  <input type="radio" name="visibility" value="Anonymous" checked>
+                  <span><strong>Anonymous</strong><small>Show “Anonymous”, not my name</small></span>
+                </label>
+                <label class="feedback-radio-card">
+                  <input type="radio" name="visibility" value="Named">
+                  <span><strong>With my name</strong><small>Show the name I choose below</small></span>
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="feedback-name-field" id="feedback-name-field" hidden>
+              <label for="feedback-name">Name to display publicly</label>
+              <input id="feedback-name" name="display_name" type="text" maxlength="60" autocomplete="name" placeholder="First name or preferred display name">
+            </div>
+
+            <div class="feedback-field">
+              <label for="feedback-module">Which part of the programme?</label>
+              <select id="feedback-module" name="module" required>
+                <option value="General feedback">General feedback</option>
+                <option value="Semantic Data Technologies">Semantic Data Technologies</option>
+                <option value="Advanced Machine Learning">Advanced Machine Learning</option>
+                <option value="Deep Learning">Neural Networks &amp; Deep Learning</option>
+                <option value="Our Stories / website">Our Stories / website</option>
+              </select>
+            </div>
+
+            <div class="feedback-field">
+              <label for="feedback-kind">What type of feedback?</label>
+              <select id="feedback-kind" name="category" required>
+                <option value="I discovered">💡 I discovered something</option>
+                <option value="I have a question">❓ I have a question</option>
+                <option value="I would change">🔬 I would change something</option>
+                <option value="Appreciation">👏 Something worked well</option>
+              </select>
+            </div>
+
+            <div class="feedback-field">
+              <div class="feedback-label-row"><label for="feedback-message">Your message</label><span id="feedback-character-count">0 / 700</span></div>
+              <textarea id="feedback-message" name="message" rows="6" maxlength="700" minlength="8" required placeholder="For example: The movie dataset made SPARQL easier to understand. I'd love one more example of OPTIONAL queries."></textarea>
+            </div>
+
+            <label class="feedback-consent">
+              <input type="checkbox" id="feedback-consent" name="permission_to_publish" value="Yes" required>
+              <span>I agree that my message may be displayed on this public website after review, with my chosen name or “Anonymous”. Please remove any personal information about other people.</span>
+            </label>
+
+            <p class="feedback-privacy">
+              <strong>Before submitting:</strong> Please do not include private student information, grades or sensitive personal details. Submissions go through the third-party FormSubmit service to the website coordinator for moderation. “Anonymous” means your name is not requested or displayed publicly, not that network information is unavailable to the service.
+            </p>
+
+            <div class="feedback-submit-row">
+              <button class="button feedback-submit-button" type="submit" id="feedback-submit">Submit for review <span aria-hidden="true">↗</span></button>
+              <span class="feedback-submit-hint">Reviewed before appearing on the feedback wall</span>
+            </div>
+            <p class="feedback-status" id="feedback-status" role="status" aria-live="polite" hidden></p>
+          </form>
+        </div>
+
+        <aside class="feedback-preview-rail" aria-labelledby="feedback-preview-heading">
+          <div class="feedback-preview-card">
+            <span class="story-aside-label">Live preview</span>
+            <h3 id="feedback-preview-heading">How your feedback could look</h3>
+            <article class="feedback-preview-post" aria-label="Your feedback preview">
+              <div class="feedback-post-top">
+                <span class="feedback-avatar" id="feedback-preview-avatar" aria-hidden="true">A</span>
+                <div>
+                  <strong id="feedback-preview-name">Anonymous</strong>
+                  <small id="feedback-preview-module">General feedback</small>
+                </div>
+              </div>
+              <span class="feedback-post-category" id="feedback-preview-category">💡 I discovered</span>
+              <p id="feedback-preview-text">Your message preview will appear here as you type.</p>
+            </article>
+            <p class="feedback-preview-caption">This is only a preview. Nothing is publicly posted until a coordinator reviews and approves it.</p>
+          </div>
+          <div class="feedback-loop-panel">
+            <span class="kicker">Closing the loop</span>
+            <h3>You said → We tried</h3>
+            <p>As ideas are reviewed, we can share the changes they inspire in future lectures, quizzes and Colab tutorials.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section alt feedback-wall-section" id="feedback-wall" aria-labelledby="feedback-wall-heading">
+      <div class="content">
+        <div class="section-head">
+          <div><span class="kicker">The public feedback wall</span><h2 id="feedback-wall-heading">What we're learning together</h2></div>
+          <p>Approved suggestions appear here, either under the student's chosen display name or as Anonymous. Nothing is published automatically.</p>
+        </div>
+        <div id="feedback-wall-list" class="feedback-wall-grid" aria-live="polite"></div>
+        <div id="feedback-wall-empty" class="feedback-wall-empty" hidden>
+          <span class="feedback-wall-empty-icon" aria-hidden="true">✳</span>
+          <h3>The first ideas will appear here</h3>
+          <p>When the teaching team approves submissions, this wall will grow into a public record of our shared learning.</p>
+        </div>
+      </div>
+    </section>
+    <section class="feedback-page-note">
+      <div class="content">
+        <p><strong>Feedback or a private concern?</strong> This page is for optional public-facing teaching feedback, not confidential complaints or assessment matters. For a private concern, contact the university through its established channels. You can ask the website coordinator to correct or remove a published comment.</p>
+      </div>
+    </section>
+  </main>
+  <div data-site-footer></div>
+  <script src="assets/js/header-footer.js"></script>
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/feedback-data.js"></script>
+  <script src="assets/js/feedback.js"></script>
+</body>
+</html>
