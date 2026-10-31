@@ -815,3 +815,177 @@ img { max-width: 100%; }
   .story-topic-gallery { grid-template-columns: 1fr; }
   .story-topic-tile { min-height: 125px; }
 }
+
+
+/* Four As research story */
+.story-collection-divider {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: clamp(48px, 6vw, 76px) 0 clamp(30px, 4vw, 46px);
+  color: var(--red);
+  font-size: .77rem;
+  font-weight: 900;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+.story-collection-divider::before,
+.story-collection-divider::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: var(--line);
+}
+.research-story { border-top-color: var(--gold); }
+.research-story .story-lead-grid h3 {
+  font-size: clamp(1.95rem, 4.5vw, 3.45rem);
+}
+.research-story-lead {
+  grid-template-columns: minmax(0, 1.22fr) minmax(280px, .85fr);
+  gap: clamp(24px, 3.6vw, 48px);
+}
+.four-as-paper-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: var(--red);
+  font-weight: 900;
+  text-underline-offset: 4px;
+}
+.four-as-figure { margin: 0; min-width: 0; }
+.four-as-photo-placeholder {
+  position: relative;
+  isolation: isolate;
+  min-height: 300px;
+  aspect-ratio: 4 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 24px;
+  border: 2px dashed #a3b0be;
+  border-radius: 18px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 75% 25%, rgba(199,166,75,.18), transparent 40%),
+    radial-gradient(circle at 20% 80%, rgba(16,42,86,.12), transparent 42%),
+    linear-gradient(135deg, #f7f6f0, #ebf0f6);
+  text-align: center;
+}
+.four-as-photo-placeholder::before,
+.four-as-photo-placeholder::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 180px;
+  aspect-ratio: 1;
+  border: 1px solid rgba(7,26,61,.1);
+  border-radius: 50%;
+}
+.four-as-photo-placeholder::before { top: -55px; right: -65px; }
+.four-as-photo-placeholder::after { bottom: -100px; left: -62px; width: 250px; }
+.four-as-photo-monogram {
+  color: var(--navy);
+  font-size: clamp(4.3rem, 8vw, 7rem);
+  font-weight: 900;
+  letter-spacing: -.09em;
+  line-height: 1;
+}
+.four-as-photo-monogram span { color: var(--gold); }
+.four-as-photo-label {
+  color: var(--red);
+  font-size: .74rem;
+  font-weight: 900;
+  letter-spacing: .17em;
+}
+.four-as-photo-hint {
+  color: var(--muted);
+  max-width: 240px;
+  font-size: .88rem;
+}
+.four-as-figure figcaption {
+  margin: 11px 0 0;
+  color: var(--muted);
+  font-size: .8rem;
+  text-align: center;
+}
+.four-as-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+}
+.four-as-intro { max-width: 830px; margin: 54px 0 22px; }
+.four-as-intro h4 {
+  margin: 10px 0 12px;
+  color: var(--navy);
+  font-size: clamp(1.65rem, 3vw, 2.25rem);
+  line-height: 1.14;
+  letter-spacing: -.04em;
+}
+.four-as-intro p { max-width: 770px; margin: 0; color: var(--muted); }
+.four-as-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 13px;
+}
+.four-as-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 254px;
+  padding: clamp(17px, 2vw, 24px);
+  border-radius: 15px;
+  background: #edf3f8;
+  border: 1px solid #dce5ed;
+}
+.four-as-card:nth-child(2) { background: #f7f0dd; border-color: #eaddbc; }
+.four-as-card:nth-child(3) { background: #f6e8e9; border-color: #efcfd1; }
+.four-as-card:nth-child(4) { background: #edf0fa; border-color: #d9e2f2; }
+.four-as-number {
+  display: block;
+  color: var(--red);
+  font-size: .72rem;
+  font-weight: 900;
+  letter-spacing: .14em;
+}
+.four-as-card h5 {
+  margin: 16px 0 10px;
+  color: var(--navy);
+  font-size: clamp(1.26rem, 2.2vw, 1.65rem);
+  line-height: 1.1;
+  letter-spacing: -.025em;
+}
+.four-as-card p {
+  flex: 1;
+  margin: 0 0 18px;
+  color: var(--ink);
+  font-size: .95rem;
+  line-height: 1.5;
+}
+.four-as-principle {
+  display: block;
+  padding-top: 13px;
+  border-top: 1px solid rgba(7,26,61,.12);
+  color: var(--muted);
+  font-size: .76rem;
+  font-weight: 700;
+}
+.four-as-reading { margin-bottom: 42px; }
+.four-as-reading .story-copy a {
+  color: var(--red);
+  text-underline-offset: 4px;
+}
+@media (max-width: 1050px) {
+  .four-as-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .four-as-card { min-height: 215px; }
+}
+@media (max-width: 900px) {
+  .research-story-lead { grid-template-columns: 1fr; }
+  .four-as-figure { max-width: 560px; }
+}
+@media (max-width: 520px) {
+  .four-as-grid { grid-template-columns: 1fr; }
+  .four-as-card { min-height: 0; }
+  .four-as-photo-placeholder { min-height: 240px; }
+  .story-collection-divider { gap: 14px; }
+}
