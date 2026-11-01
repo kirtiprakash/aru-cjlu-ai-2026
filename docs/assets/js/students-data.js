@@ -257,11 +257,11 @@ window.STUDENTS = [
     group: "Hinton",
     leader: false,
     photo: "assets/images/students/xiangqin-wang.jpg",
-    hometown: "To be confirmed",
-    studies: "To be confirmed",
-    interests: "To be confirmed",
-    shortBio: "This profile is reserved for a member of the 2026 ARU–CJLU cohort and will be completed after the student reviews and approves the wording.",
-    approved: false
+    hometown: "Hangzhou, Zhejiang, China",
+    studies: "Communication Engineering, China Jiliang University",
+    interests: "Human–computer interaction, human-centred AI and AI-driven user experience",
+    shortBio: "I hope to develop a deep understanding of AI and learn how to apply it effectively. I want to use the latest technologies to improve people's lives, make the benefits of technology accessible to more people, and support personal growth through the thoughtful use of technology.",
+    approved: true
   },
   {
     id: "student-24",
