@@ -28,20 +28,57 @@ window.MODULES = {
     summary: "This module develops advanced modelling, experimental and interpretive skills, with emphasis on selecting methods for the problem rather than applying algorithms mechanically.",
     tools: "Python, NumPy, pandas, scikit-learn, XGBoost, SHAP and Jupyter/Colab",
     outcomes: ["Design robust machine-learning experiments", "Compare linear, kernel, ensemble and probabilistic methods", "Handle dimensionality and unstructured relationships", "Interpret uncertainty and model behaviour", "Communicate limitations and deployment risks"],
-    weeks: [
-      ["1", "Learning Problems and Experimental Design", "Tasks, variables, baselines, leakage and reproducible workflows", "Baseline notebook"],
-      ["2", "Representation and Data Preparation", "Missingness, encoding, scaling, imbalance and feature construction", "Pipeline lab"],
-      ["3", "Regularised Linear Models", "Bias–variance trade-off, L1/L2 penalties and model selection", "Derivation + code"],
-      ["4", "Kernel Methods and Support Vector Machines", "Margins, kernels, dual intuition and hyperparameter search", "SVM lab"],
-      ["5", "Tree Ensembles and Boosting", "Random forests, gradient boosting, XGBoost and feature importance", "Benchmark study"],
-      ["6", "Unsupervised Learning", "Clustering, mixture models, validation and interpreting latent groups", "Clustering challenge"],
-      ["7", "Dimensionality Reduction", "PCA, manifold learning and visualisation without overclaiming", "Embedding lab"],
-      ["8", "Probabilistic Machine Learning", "Likelihood, Bayesian reasoning, calibration and uncertainty", "Calibration lab"],
-      ["9", "Graph-Based Machine Learning", "Graph representations, node features, link prediction and message passing", "Graph notebook"],
-      ["10", "Explainability and Responsible ML", "Global/local explanations, fairness, robustness and documentation", "Model audit"],
-      ["11", "Deployment and Monitoring", "Distribution shift, drift, reproducibility and human oversight", "Deployment plan"],
-      ["12", "Research-Style Evaluation", "Ablation, statistical comparison, reporting and project synthesis", "Project showcase"]
-    ]
+    
+weeks: [
+  ["1", "Introduction to Machine Learning and Superintelligence",
+   "Machine learning fundamentals, supervised and unsupervised learning, types of AI, the path towards artificial general intelligence (AGI), and the concept of superintelligence.",
+   "Introduction to ML and AI futures"],
+
+  ["2", "Data Splitting and Validation Techniques",
+   "Training, validation and test datasets, random and stratified splitting, K-fold cross-validation, data leakage and reproducible experiments.",
+   "Data splitting and validation Colab lab"],
+
+  ["3", "K-Nearest Neighbours (KNN)",
+   "Similarity-based learning, choosing K, Euclidean and Manhattan distances, feature scaling, majority voting, decision boundaries and model evaluation.",
+   "Interactive KNN laboratory"],
+
+  ["4", "Linear Regression: From Data to Predictions",
+   "Linear prediction equations, slope and intercept, residuals, least squares, mean squared error, gradient descent and interpreting model parameters.",
+   "Interactive linear regression laboratory"],
+
+  ["5", "Model Generalisation and Regularisation",
+   "Underfitting and overfitting, bias–variance trade-off, training versus validation error, model complexity, L1/L2 regularisation and hyperparameter selection.",
+   "Generalisation and regularisation lab"],
+
+  ["6", "Logistic Regression for Classification",
+   "Binary classification, sigmoid function, predicted probabilities, decision thresholds, log loss and interpreting logistic regression coefficients.",
+   "Logistic regression Colab lab"],
+
+  ["7", "Classification Evaluation and Error Metrics",
+   "Confusion matrices, true and false positives, accuracy, precision, recall, specificity, F1-score, ROC curves, AUC and class imbalance.",
+   "Interactive classification metrics lab"],
+
+  ["8", "Support Vector Machines and Kernel Methods",
+   "Linear classification, maximum-margin decision boundaries, support vectors, soft margins, nonlinear kernels and hyperparameter tuning.",
+   "SVM and kernel visualisation lab"],
+
+  ["9", "Decision Trees and Interpretable Learning",
+   "Recursive partitioning, decision rules, entropy, information gain, Gini impurity, tree depth, pruning and overfitting.",
+   "Build and visualise a decision tree"],
+
+  ["10", "Unsupervised Learning and Clustering",
+   "K-means and hierarchical clustering, Euclidean distances, cluster centroids, choosing the number of clusters and silhouette analysis.",
+   "Interactive clustering laboratory"],
+
+  ["11", "Data Acquisition, Ethics and Privacy",
+   "Data collection, quality, provenance, consent, licensing, sampling bias, fairness, privacy protection and responsible machine learning.",
+   "Data ethics and privacy case study"],
+
+  ["12", "Dimensionality Reduction and Advanced ML Techniques",
+   "High-dimensional data, principal component analysis (PCA), covariance, eigenvectors, feature extraction, visualisation and advanced model comparison.",
+   "PCA and advanced ML Colab challenge"]
+]
+
   },
   dl: {
     title: "Neural Networks and Deep Learning",
