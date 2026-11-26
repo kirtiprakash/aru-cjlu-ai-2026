@@ -38,11 +38,11 @@ weeks: [
    "Training, validation and test datasets, random and stratified splitting, K-fold cross-validation, data leakage and reproducible experiments.",
    "Data splitting and validation Colab lab"],
 
-  ["3", "K-Nearest Neighbours (KNN)",
-   "Similarity-based learning, choosing K, Euclidean and Manhattan distances, feature scaling, majority voting, decision boundaries and model evaluation.",
-   "Interactive KNN laboratory"],
+["3", "K-Nearest Neighbours (KNN)",
+ "Similarity-based learning, choosing K, Euclidean and Manhattan distances, feature scaling, majority voting, decision boundaries and model evaluation.",
+ "<a href='https://kirtiprakash.github.io/MLTools/knn.html' target='_blank' rel='noopener noreferrer' style='color:inherit;text-decoration:none'>Interactive KNN laboratory ↗</a>"],
 
-  ["4", "Linear Regression: From Data to Predictions",
+["4", "Linear Regression: From Data to Predictions",
    "Linear prediction equations, slope and intercept, residuals, least squares, mean squared error, gradient descent and interpreting model parameters.",
    "Interactive linear regression laboratory"],
 
